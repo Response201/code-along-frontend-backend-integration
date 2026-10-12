@@ -16,7 +16,7 @@ async function connectDatabase() {
             CREATE TABLE IF NOT EXISTS todos (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 task TEXT NOT NULL,
-                done INTEGER DEFAULT 0
+                done BIT DEFAULT 0
             )
         `);
 

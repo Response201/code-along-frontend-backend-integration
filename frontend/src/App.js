@@ -10,7 +10,7 @@ function App() {
     const [task, setTask] = useState("");
 
 
-    // Hämta Todos
+    // Hämta Todos http://localhost:5000
   /*   const getTodos = async () => {
        
 
@@ -66,8 +66,8 @@ const toggleTodo = async (todo) => {
                     <TodoCard
                         key={todo.id}
                         todo={todo}
-                        onDelete={() => deleteTodo()}
-                        onToggle={() => toggleTodo()}
+                        onDelete={() => deleteTodo(todo)}
+                        onToggle={() => toggleTodo(todo)}
                     />
                 ))}
             </section>
